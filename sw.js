@@ -5,10 +5,10 @@ const assets = [
     'app.js',
     'images/icon.jpg',
     'css/style.css',
-    'images/icon.jpg/icon-128x128.png',
-    'images/icon.jpg/icon-192x192.png'
+    'images/icons/icon-128x128.png',
+    'images/icons/icon-192x192.png'
 ]
-self.addEventListener('intsall', evt => {
+self.addEventListener('install', evt => {
     evt.waitUntil(
         caches.open(staticCacheName).then(cache => {
             console.log('Кэширование ресурсов')
